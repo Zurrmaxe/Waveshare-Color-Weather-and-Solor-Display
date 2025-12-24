@@ -53,7 +53,7 @@ cfg.offset_rotation = 0;  // bei Version 1.2
 
 Ebenso muss die Helligkeitssteuerung des Display durch Einbau einer Drahtbrücke angepasst werden. Hierzu folgende Anleitung:
 https://community.home-assistant.io/t/esp32-s3-7inch-capacitive-touch-display-adjust-brightness/771030
-
+<img width="1101" height="498" alt="Image" src="https://github.com/user-attachments/assets/e6bba7ae-b194-457a-9680-aa4d82769302" />
 
 Oder man lässt die Helligkeitsregelung weg indem man den Code anpasst. 
 
