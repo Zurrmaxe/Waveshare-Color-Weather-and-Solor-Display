@@ -64,10 +64,13 @@ In den Dateien  wave.h oder sunton.h stehen die verwendeten Ports für Beleuchtu
 Hardware:
 
 Außerdem wird für die Abfrage meiner Hoymiles-Wechselrichter eine OpenDTU benötigt:
+https://github.com/hoylabs/OpenDTU-OnBattery
 
 Für die Abfrage des Stromzählers wird eine SHELLY EM und einen ISKRA-Sensor ( je nach Zähler benötigt:
+https://wiki.volkszaehler.org/hardware/channels/meters/power/edl-ehz/iskraemeco_mt175
 
 Für die Wetterdaten braucht ihr ein kostenlose Zugriff bei OpenWeatherMap  2.5 :
+https://openweathermap.org/appid
 
 Dort bei kommt ihr den Wetter-API-Key
 
@@ -79,7 +82,7 @@ Für die Abfrage der Innentemperatur benutze ich einen BME 280 per I2C-Bus.
 
 Die Messung der Außentemperatur erfolgt über einen ESP32 mit BME280 .Diese Daten werden per JSON (HTTP/GET) übertragen. Dieser Außensensor macht bei mir manchmal Probleme und führte zu ungewolltem Systemneustart und ist ggf. auszukommentieren.
 
-Je nach verschwendeter Hardware sind die entsprechenden Codes den jeweiligen Sensoren (Shelly, IskraM175, OpenDtu,  Hoymiles pp. anzupassen.
+Je nach verwendeter Hardware sind die entsprechenden Codes den jeweiligen Sensoren (Shelly, IskraM175, OpenDtu,  Hoymiles pp. anzupassen.
 
 Der läuft im Multitasking mit zwei Kernen. Der Core = ist für den WatchDog und Timer zuständig, während im Core 1 das eigentliche Programm läuft. 
 
@@ -121,6 +124,8 @@ Der Code stopt manchmal und der WatchDog resetet dann das Display.
 Die genaue Ursache habe ich noch nicht gefunden. 
 Hat Vermutlich etwas mit der Abfrage meines Außensensors zu tun.
 
+
+Code und Bilder folgen Morgen.....
 
 
   
