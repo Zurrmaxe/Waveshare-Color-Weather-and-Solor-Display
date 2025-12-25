@@ -1,10 +1,13 @@
 # Waveshare-Color-Weather-and-Solor-Display
 Waveshare ESP32S3 Touch 7 Display for Weather and Solar
 
-Hier mein Color-Wetter-Display mit Anzeige von Solardaten.
+Hier mein Color-Wetter-Display mit Anzeige von Solardaten :
 
-https://github.com/Zurrmaxe/Waveshare-Color-Weather-and-Solor-Display/blob/main/main.jpg?raw=true
-<img width="1101" height="498" alt="Image" src="https://github.com/Zurrmaxe/Waveshare-Color-Weather-and-Solor-Display/blob/main/main.jpg?raw=true" />
+<img width="1157" height="712" alt="Image" src="https://github.com/Zurrmaxe/Waveshare-Color-Weather-and-Solor-Display/blob/main/main.jpg?raw=true" />
+
+Hier im Überblick die wichtigsten Merkmale des Displays:
+
+<img width="11571" height="712" alt="Image" src="https://github.com/Zurrmaxe/Waveshare-Color-Weather-and-Solor-Display/blob/main/Bilder/Funktionen.jpg" />
 
 Achtung ! Achtung ! Ganz wichtig !
 
@@ -21,30 +24,31 @@ Zur Inbetriebnahme sind gute Programmier-Erfahrungen und Grundkenntnisse im Umga
 
 Der Code ist definitiv nichts für Anfänger und Neueinsteiger, da hier teilweise umfangreiche Änderungen an der Hardware, dem Code und ggf. Anpassung an den Libarys erforderlich sind.
 
-
 Der geniale Wettercode des Displays stammt nicht von mir, sondern  kommt, von diesem Entwickler:
 https://github.com/G6EJD/ESP32-e-Paper-Weather-Display/tree/master
 
 All Credits go to him 
 
-Hier gibt’s  auch weitere Infos zum Wetterdisplay und auch zusätzliche Sprachdateien.
+Hier gibt’s auch weitere Infos zum Wetterdisplay und auch die zusätzlichen Sprachdateien.
 
 Ich habe den Code lediglich für das Farbdisplay umgeschrieben und um weitere Sensoren und Hardware erweitert.
 
-Mein Color-Wetter Display mit Abfragen von Wechselrichten und Stromzählern ist noch in der Entwicklung und hat dementsprechend noch einige Fehler, welche gelegentlich zu einem Absturz führen. 
+Mein Color-Wetter Display mit Abfragen von Wechselrichter und Stromzähler ist noch in der Entwicklung und hat dementsprechend noch einige Fehler, welche gelegentlich zu einem Absturz führen. 
 
-Insbesondere dann , wenn die Sensoren nicht richtig erkannt wurden. Gutes WLAN ist daher sehr wichtig. Alle Sensoren müssen im gleichen WLAN-Netz sein und immer die selbe WLAN-Adresse haben.
+Insbesondere dann , wenn die Sensoren nicht richtig erkannt wurden. Gutes WLAN ist daher sehr wichtig. Alle Sensoren müssen im gleichen WLAN-Netz sein.
 
 Das Display ist ein Waveshare ESP32S3 Touch 7 Display :
 https://www.waveshare.com/esp32-s3-touch-lcd-7.htm
-Dazu gibt es ein Wiki:
+Dazu gibt es auch ein Wiki:
 https://www.waveshare.com/wiki/ESP32-S3-Touch-LCD-7
 
-Im Unterschied zu Suntours-_Displays hat es  keine „freien“ GPIO-Ports.  Alles wird durch eine Port-Expander geregelt. Daher läuft auch nicht jede Libary auf dem Board fehlerfrei. 
+Vorteil gegenüber dem Sunton ist, dass es bequem in einem Gehäuse oder Rahmen eingebaut werden kann.
 
-Wire.h macht Probleme weil es den Port-Expander umgeht und führt ggf. zu Störungen. Ebenso Libarys, welche direkt die GPIOs Hardware ansprechen. Try and ErrorPinzip.
+Im Unterschied zum Suntours-_Displays hat das Waveshare keine „freien“ GPIO-Ports.  Alles wird durch einen Port-Expander geregelt. Daher läuft auch nicht jede Libary auf dem Board fehlerfrei. 
 
-Ich habe zwei verschiedene Versionen des Displays. Diese Board haben eine leicht geränderte Hardware. Insbesondere der Touch-Screen ist bei der Version 1.1 um 180 Grad gedreht !!
+Wire.h macht z.B. Probleme, weil es den Port-Expander umgeht und führt ggf. zu Störungen. Ebenso Libarys, welche direkt die GPIO-Ports ansprechen. Try and ErrorPinzip.
+
+Ich habe zwei verschiedene Versionen des Displays hier im Einsatz. Diese Board haben eine leicht geränderte Hardware. Insbesondere der Touch-Screen ist bei der Version 1.1 um 180 Grad gedreht !!
 
 Daher kann es sein, dass die eigentlichen (unsichtbaren) Touchbuttons nicht mehr unten, sondern um 180 Grad gedreht und oben auf dem Display sind ! 
 
@@ -64,6 +68,8 @@ Oder man lässt die Helligkeitsregelung weg indem man den Code anpasst.
 Diese Änderung dient auch nur dazu, dass man denn Code für die Helligkeitsregelung für das Waveshare und Suntor -Display übernehmen kann.
 
 In den Dateien  wave.h oder sunton.h stehen die verwendeten Ports für Beleuchtung und I2C Bus.
+
+Für den Betrieb mit den Sunton-Display ist allerding die Datei Sunton.h zu benutzen.
 
 Hardware:
 
@@ -129,7 +135,7 @@ Die genaue Ursache habe ich noch nicht gefunden.
 Hat Vermutlich etwas mit der Abfrage meines Außensensors zu tun.
 
 
-Code und Bilder folgen Morgen.....
+.
 
 
   
