@@ -1,5 +1,5 @@
-# Waveshare-Color-Weather-and-Solor-Display
-Waveshare ESP32S3 Touch 7 Display for Weather and Solar
+# Waveshare-Color-Weather-and-Solar-Display
+Waveshare ESP32S3 Touch 7 Display für Wettervorhersage und Anzeige von Solardaten.
 
 Hier mein Color-Wetter-Display mit Anzeige von Solardaten :
 
