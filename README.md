@@ -89,7 +89,7 @@ Wetterabfragen bleiben kostenlos, wenn eine bestimmte Anzahl pro Tag nicht über
 
 Für die Abfrage der Innentemperatur benutze ich einen BME 280 per I2C-Bus. 
 
-Die Messung der Außentemperatur erfolgt über einen ESP32 mit BME280 .Diese Daten werden per JSON (HTTP/GET) übertragen. Dieser Außensensor macht bei mir manchmal Probleme und führte zu ungewolltem Systemneustart und ist ggf. auszukommentieren.
+Die Messung der Außentemperatur erfolgt über einen ESP32 mit BME280 .Diese Daten werden per JSON (HTTP/GET) übertragen. Dieser Außensensor macht bei mir manchmal Probleme und führte zu ungewolltem Systemneustart und ist ggf. auszukommentieren. Dazu habe ich jetzt mal einen neuen Außensensor mit einem DHT22 entwickelt.
 
 Je nach verwendeter Hardware sind die entsprechenden Codes den jeweiligen Sensoren (Shelly, IskraM175, OpenDtu,  Hoymiles pp. anzupassen.
 
