@@ -133,6 +133,10 @@ Der Code stopt manchmal und der WatchDog resetet dann das Display.
 Die genaue Ursache habe ich noch nicht gefunden. 
 Hat Vermutlich etwas mit der Abfrage meines Außensensors zu tun.
 
+Daher habe ich hier einen neues Aussensensor auf Basis des DHT22 hochgeladen.
+Die ensprechenden Dateien in Display-Code müssen auch ausgetauscht werden.
+
+
 
 .
 
